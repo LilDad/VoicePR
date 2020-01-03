@@ -7,7 +7,7 @@ def talk(words):
     print(words)
     os.system("say " + words)
 
-talk("Hi, ask me some things")
+talk("Привет")
 
 def command():
     r = sr.Recognizer()
