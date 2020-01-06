@@ -41,3 +41,6 @@ def makeSomething(zadanie):
     elif 'stop' in zadanie:
         talk("Yes, of course, no problem")
         sys.exit()
+
+while True:
+    makeSomething(command())
