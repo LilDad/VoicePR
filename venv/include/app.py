@@ -29,5 +29,15 @@ def command():
     # Исключение ошибки
     except sr.UnknownValueError:
         talk("I don't understand you.")
+        zadanie = command()
 
     return zadanie
+
+def makeSomething(zadanie):
+    if 'open website' in zadanie:
+        talk("Opening")
+        url = 'https://google.com'
+        webbrowser.open(url)
+    elif 'stop' in zadanie:
+        talk("Yes, of course, no problem")
+        sys.exit()
